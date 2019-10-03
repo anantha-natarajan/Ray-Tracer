@@ -1,0 +1,7 @@
+﻿  Source.cpp
+c:\users\ananth\source\repos\raytracingproject\raytracingproject\hitable_list.h(21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\ananth\source\repos\raytracingproject\raytracingproject\source.cpp(49): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ananth\source\repos\raytracingproject\raytracingproject\source.cpp(50): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\ananth\source\repos\raytracingproject\raytracingproject\source.cpp(74): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\ananth\source\repos\raytracingproject\raytracingproject\source.cpp(76): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  RayTracingProject.vcxproj -> C:\Users\Ananth\source\repos\RayTracingProject\Debug\RayTracingProject.exe
