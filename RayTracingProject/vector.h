@@ -1,4 +1,7 @@
-#pragma once
+
+#ifndef VECTOR_H
+#define VECTOR_H
+
 #include<iostream>
 using namespace std;
 
@@ -176,3 +179,14 @@ inline istream& operator>>(istream& is, vec3 &t) {
 	is >> t.e[0] >> t.e[1] >> t.e[2];
 	return is;
 }
+
+
+inline float distanceVectors(const vec3 &v1, const vec3 &v2) {
+	float xComp = (v2.e[0] - v1.e[0])*(v2.e[0] - v1.e[0]);
+	float yComp = (v2.e[1] - v1.e[1])*(v2.e[1] - v1.e[1]);
+	float zComp = (v2.e[2] - v1.e[2])*(v2.e[2] - v1.e[2]);
+	float d = sqrt(xComp + yComp + zComp);
+	return d;
+}
+
+#endif

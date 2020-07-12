@@ -1,11 +1,16 @@
-#pragma once
+#ifndef HITABLE_LIST_H
+#define HITABLE_LIST_H
+
+#include "ray.h"
 #include "hitable.h"
+#include "vector.h"
+
 
 class hitable_list : hitable {
 public:
 	hitable **list;
 	int list_size;
-	hitable_list(){}
+	hitable_list() {}
 	hitable_list(hitable **l, int size) {
 		list = l;
 		list_size = size;
@@ -26,3 +31,7 @@ bool hitable_list::hit(const ray& r, float t_min, float t_max, hit_record& rec) 
 	}
 	return hit_anything;
 }
+
+
+#endif // !HITABLE_LIST_H
+
